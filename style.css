@@ -16,6 +16,7 @@ img.good{
 	margin: 0 auto;
 	width: 30%;
 	height: 30%;
+	border-radius: 10%;
 }
 div.utama nav.navbar {
 	display: flex;
@@ -49,7 +50,7 @@ div.utama nav.navbar ul.nav li{
 div.utama nav.navbar ul.nav li a{
 	color: white;
 	text-decoration: none;
-	padding: 16.2px 5px;
+	padding: 16.5px 5px;
 	font-weight: bold;
 
 }
@@ -92,9 +93,10 @@ div.utama div.content {
 div.utama div.content div.content-dalam {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	/* align-content: flex-end; */
-	float: left;
+	flex-wrap: wrap;
+	/* float: left; */
 	width: 70%;
 	height: 100%;
 	
@@ -109,12 +111,29 @@ div.utama div.content div.content-dalam main.main img {
 	float: left;
 	margin-right: 5%;
 }
-div.utama div.content div.content-dalam aside {
+div.utama div.content div.content-samping {
+	width: 40%;
+	height: 100%;
+	margin: 2%;
+	background-color: #797979;
+	border-radius: 5%;
+}
+div.utama div.content div.content-samping aside.aside-2 {
 	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
-	align-items: center;
-	width: 90%;
+	justify-content: flex-start;
+	/* flex-direction: row; */
+	align-items: flex-start;
+	
+	width: 100%;
+	height: 80%;
+	
+	padding: 10px;
+}
+div.utama div.content div.content-samping aside.aside-2 img.good2{
+	margin: 5%;
+	border-radius: 5%;
+	height: 20%;
+	width: 20%;
 }
 div.utama div.content div.content-dalam main.main div p.catatan {
 	display: block;
@@ -134,4 +153,14 @@ div.utama div.content div.content-dalam main.main div p.terdaftar {
 div.utama div.content div.content-dalam main.main div {
 	display: block;
 	/* float: left; */
-}
+}[33mcommit c9ee98fb8dca4d5bfb9714969cb92d414092d750[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: humanrizki <humanrizki123@gmail.com>
+Date:   Wed Apr 21 23:43:37 2021 +0700
+
+    menambahkan bagian main
+
+[33mcommit 700bd895287fb7f94e2a951d81668dba13ce60b4[m
+Author: humanrizki <humanrizki123@gmail.com>
+Date:   Wed Apr 21 21:36:48 2021 +0700
+
+    inisialisasi
