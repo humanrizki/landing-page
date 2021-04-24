@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
-    font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 div.utama {
 	display: block;
@@ -95,6 +95,7 @@ div.utama div.content {
 	height: 100%;
 	align-content: center;
 	flex-direction: column;
+	/* justify-content: center; */
 }
 div.utama div.content div.content-pertama{
 	display: flex;
@@ -207,12 +208,12 @@ div.utama div.content div.content-kedua aside.aside-2 {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
 	/* background-color: aliceblue; */
 }
 div.utama div.content div.content-kedua aside.aside-2 div.isi-side {
 	width: 510px;
-	margin-left: 15%;
+	/* margin-left: 15%; */
 	display: flex;
 	flex-direction: column;
 
@@ -232,7 +233,7 @@ div.utama div.content div.content-kedua aside.aside-2 div.isi-side h1 {
 div.utama div.content div.content-kedua aside.aside-2 div.isi-side p {
 	display: flex;
 	width: 470px;
-	height: 250px;
+	height: 210px;
 	align-items: center;
 	justify-content: center;
 	color: rgb(255, 255, 255);
@@ -255,4 +256,111 @@ img.good3{
 	width: 50%;
 	height: 50%;
 } */
-
+div.utama div.content h1.ten{
+	width: 100%;
+	/* height: 200px; */
+	margin: 0 0;
+	/* padding: 10px; */
+	background-color: azure;
+	padding: 20px 0;
+}
+div.utama div.content div.tentang {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: azure;
+	padding: 20px 0;
+	/* margin: 0 20px; */
+}
+div.utama div.content div.tentang img {
+	order: 2;
+}
+div.utama div.content div.tentang div.isi {
+	width: 40%;
+	padding: 20px;
+	background-color: rgb(156, 231, 193);
+	order: 1;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+div.utama div.content div.tentang div.isi-g {
+	width: 20%;
+	height: auto;
+	/* display: flex; */
+}
+div.utama div.content div.tentang div.isi-g h3 {
+	display: flex;
+	width: 200px;
+	height: 60px;
+	background-color: #868686;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-left: 5%;
+	border-radius: 2px;
+}
+div.utama div.content div.tentang div.isi-g ul.golongan li {
+	list-style-type: square;
+}
+img.good4{
+	height: 8%;
+	width: 8%;
+}
+div.utama div.content h1.hubung {
+	text-align: center;
+	width: 100%;
+	/* height: 200px; */
+	margin: 0 0;
+	/* padding: 10px; */
+	background-color: rgb(255, 107, 107);
+	padding: 20px 0;
+}
+div.utama div.content div.hubungi {
+	display: flex;
+	width: 100%;
+	/* height: 100%; */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+div.utama div.content div.hubungi div.isi-h{
+	display: flex;
+	width: 80%;
+	height: auto;
+	background-color: #868686;
+	justify-content: flex-start;
+	/* flex-direction: row; */
+	padding: 20px;
+	margin: 5px 0;
+	border-radius: 20px;
+}
+div.utama div.content div.hubungi div.isi-h p{
+	margin-left: 4%;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+}
+div.utama div.content div.hubungi div.isi-h:nth-child(1){
+	background-color: green;
+}
+div.utama div.content div.hubungi div.isi-h:nth-child(2){
+	background-color: rgb(66, 126, 255);
+}
+div.utama div.content div.hubungi div.isi-h:nth-child(3){
+	background-color: rgb(255, 60, 60);
+}
+footer {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	background-color: #888888;
+}
+footer p.footer {
+	color: white;
+	font-weight: bold;
+}
