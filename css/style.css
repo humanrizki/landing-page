@@ -7,22 +7,23 @@ body {
 div.utama {
 	display: block;
 	height: 100%;
-	width: 100vw;
-
-	/*justify-content: space-between;*/
+	width: 100%;
 }
-
+div.utama nav.navbar a.icon {
+	display: none;
+}
 div.utama nav.navbar {
 	display: flex;
 	background-color: salmon;
 	justify-content: space-evenly;
 	align-items: center;
+	position: fixed;
+	width: 100%;
 }
 div.utama nav.navbar a.watermark {
 	display: block;
 	color: white;
 	text-decoration: none;
-	/* font-size: inherit; */
 	font-size: 20px;
 	pointer-events: none;
 	font-weight: bold;
@@ -30,17 +31,10 @@ div.utama nav.navbar a.watermark {
 a.watermark {
 	color: blue;
 }
-/* div.utama nav.navbar a.navbar-brand{
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-} */
 div.utama nav.navbar ul.nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	/*flex-direction: row;*/
 	align-items: center;
 	width: 35%;
 	height: 100%;
@@ -48,10 +42,6 @@ div.utama nav.navbar ul.nav {
 div.utama nav.navbar ul.nav li{
 	color: white;
 	list-style: none;
-	/*flex-direction: row;*/
-	/*text-align: center;*/
-	/* margin: 0 -10%; */
-	/* width: 50%; */
 }
 div.utama nav.navbar ul.nav li a{
 	color: white;
@@ -75,7 +65,6 @@ div.utama nav.navbar ul li a.login {
 	font-weight: bold;
 	color: white;
 	border-radius: 10%;
-	
 }
 div.utama nav.navbar ul li a.login:hover {
 	width: auto;
@@ -91,34 +80,27 @@ div.utama nav.navbar ul li a.login:hover {
 }
 div.utama div.content {
 	display: flex;
-	
 	width: 100%;
 	height: 100%;
 	align-content: center;
 	flex-direction: column;
-	/* justify-content: center; */
 }
 div.utama div.content div.content-pertama{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	background-color: rgb(125, 171, 255);
-	/* align-content: flex-end; */
+	justify-content: space-around;
+	background-color: #7dabff;
 	flex-wrap: wrap;
-	/* float: left; */
 	width: 100%;
-	/* height: 200px; */
 	align-items: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 90px 0;
 }
 div.utama div.content div.content-kedua{
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: space-evenly;
 	background-color: rgb(207, 207, 207);
-	/* align-content: flex-end; */
 	flex-wrap: wrap;
-	/* float: left; */
 	width: 100%;
 	height: auto;
 	align-items: center;
@@ -129,14 +111,10 @@ img.good{
 	width: 43%;
 	height: 100%;
 	border-radius: 10%;
-	
-	/* padding: 1%; */
 }
 div.utama div.content div.content-pertama main.main {
 	display: block;
-	width: 600px;
-	/* padding: 5% 15%; */
-	/* flex-wrap: wrap; */
+	width: 730px;
 	height: 100%;
 	order: 1;
 }
@@ -144,22 +122,15 @@ div.utama div.content div.content-pertama aside.aside {
 	display: flex;
 	order: 2;
 	width: 420px;
-	/* padding: 5% 15%; */
-	/* flex-wrap: wrap; */
 	height: 100%;
 	align-items: flex-start;
-	/* background-color: #504f4f; */
-	/* padding: 2%; */
-	/* border: 2px solid black; */
 }
 div.utama div.content div.content-pertama aside.aside div.side {
 	width: 90%;
 	display: block;
-	/* height: 200px; */
 	padding: 5%;
 	background-color: #5888cf;
 	border-radius: 8px;
-	/* padding: 2%; */
 	margin: 5px;
 }
 img.good1 {
@@ -182,7 +153,6 @@ div.utama div.content div.content-pertama aside.aside div.side p.qoutes{
 }
 div.utama div.content div.content-pertama aside.aside div.side hr{
 	margin-top: 40px;
-	/* padding: 10px; */
 	width: 380px;
 }
 div.utama div.content div.content-pertama aside.aside div.side p.nama{
@@ -198,31 +168,25 @@ div.utama div.content div.content-pertama main.main h1 {
 }
 div.utama div.content div.content-pertama main.main  p.catatan {
 	display: block;
-	/* float: right; */
 	font-size: inherit;
 	font-weight: bold;
 	width: 100%;
 	height: auto;
-	/* margin-top: -3%; */
 }
 div.utama div.content div.content-pertama main.main  p.terdaftar {
 	font-weight: bold;
 	color: #5a5a5a;
 }
-
 div.utama div.content div.content-kedua aside.aside-2 {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* background-color: aliceblue; */
 }
 div.utama div.content div.content-kedua aside.aside-2 div.isi-side {
 	width: 510px;
-	/* margin-left: 15%; */
 	display: flex;
 	flex-direction: column;
-
 }
 div.utama div.content div.content-kedua aside.aside-2 div.isi-side h1 {
 	display: flex;
@@ -230,7 +194,6 @@ div.utama div.content div.content-kedua aside.aside-2 div.isi-side h1 {
 	height: 60px;
 	align-items: center;
 	justify-content: center;
-	/* text-align: center; */
 	color: white;
 	background-color: rgb(174, 182, 255);
 	border-top-left-radius: 10px;
@@ -243,51 +206,36 @@ div.utama div.content div.content-kedua aside.aside-2 div.isi-side p {
 	align-items: center;
 	justify-content: center;
 	color: rgb(255, 255, 255);
-	/* overflow: auto; */
 	padding: 20px;
 	margin-top: -20px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	/* text-align: center; */
 	background-color: rgb(86, 96, 187);
 }
-
 img.good3{
 	display: flex;
 	width: 300px;
 	height: 300px; 
-	/* flex: 0.3; */
-	/* border: 1px solid black; */
 }
-/* div.utama div.content div.content1 div.isi img.good3 {
-	display: block;
-	width: 50%;
-	height: 50%;
-} */
 div.utama div.content h1.ten{
 	width: 100%;
-	/* height: 200px; */
 	margin: 0 0;
-	/* padding: 10px; */
 	background-color: azure;
 	padding: 20px 0;
 }
 div.utama div.content div.tentang {
-	/* width: 100%; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	background-color: azure;
 	padding: 20px 0;
 	flex:1;
-	/* margin: 0 20px; */
 }
 div.utama div.content div.tentang img {
 	order: 2;
 	flex: 1;
 }
 div.utama div.content div.tentang div.isi {
-	/* width: 40%; */
 	padding: 20px;
 	background-color: rgb(156, 231, 193);
 	order: 3;
@@ -295,16 +243,11 @@ div.utama div.content div.tentang div.isi {
 	border-radius: 5px;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
-	/* border: 1px solid black; */
 }
 div.utama div.content div.tentang div.isi-g {
-	/* width: 20%; */
-	/* height: auto; */
-	/* display: flex; */
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	/* border: 1px solid black; */
 }
 img.good3, div.isi, div.isi-g {
 	margin: 0 2%;
@@ -327,24 +270,18 @@ div.utama div.content div.tentang div.isi-g ul.golongan li {
 img.good4{
 	height: 70px;
 	width: 70px;
-	/* justify-content: center; */
 	margin-left: 2%;
 }
 div.utama div.content h1.hubung {
 	text-align: center;
 	width: 100%;
-	/* height: 200px; */
 	margin: 0 0;
-	/* padding: 10px; */
 	background-color: rgb(255, 224, 166);
 	padding: 20px 0;
 }
 div.utama div.content div.kotak-h {
 	display: flex;
-	/* width: 100%; */
-	/* height: 500px; */
 	justify-content: flex-start;
-	/* height: auto; */
 	flex-wrap: wrap;
 	flex: 1;
 }
@@ -353,12 +290,10 @@ div.utama  div.content div.kotak-h div.hubungi-2 {
 	flex: 1;
 	margin-left: 0;
 	margin: 15px 0;
-	/* border: 1px solid black; */
 }
 div.utama  div.content div.kotak-h div.hubungi-2 iframe.map{
 	width: 400px;
 	height: 350px;
-	/* margin: 2%; */
 	float: left;
 	overflow: auto;
 	margin-right: 1%;
@@ -367,17 +302,12 @@ div.utama  div.content div.kotak-h div.hubungi-2 iframe.map{
 div.utama  div.content div.kotak-h div.hubungi-2 p{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* div.utama  div.content div.kotak-h div.hubungi-2 */
 div.utama div.content div.kotak-h div.hubungi {
 	display: flex;
-	/* width: 1500px; */
-	/* height: 100%; */
 	flex-direction: column;
 	flex: 1;
-	/* justify-content: center; */
 	align-items: center;
 	margin: 20px 0;
-	/* border: 1px solid black; */
 }
 div.utama div.content div.kotak-h div.hubungi div.isi-h{
 	display: flex;
@@ -385,8 +315,6 @@ div.utama div.content div.kotak-h div.hubungi div.isi-h{
 	height: auto;
 	background-color: #868686;
 	justify-content: flex-start;
-	/* justify-items: center; */
-	/* flex-direction: row; */
 	align-items: center;
 	padding: 2px;
 	margin: 5px 0;
@@ -421,4 +349,45 @@ footer {
 footer p.footer {
 	color: white;
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 756px){
+	
+	div.utama nav.navbar {
+		display: flex;
+		position: absolute;
+		justify-content: space-between;
+		width: 100%;
+		height: 70px;
+		border-bottom: 1px solid #5a5a5a;
+	}
+	div.utama nav.navbar ul.nav {
+		display: none;
+		transition: all 1s ease;
+	}
+	div.utama nav.navbar a.icon {
+		display: block;
+		position: absolute;
+		margin-right: 5%;
+		right: 0;
+	}
+	div.utama nav.navbar a.watermark {
+		display: block;
+		position: absolute;
+		margin-left: 5%;
+		left: 0;
+		z-index: 2;
+	}
+	
+	div.utama nav.navbar ul.responsive {
+		display: flex;
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		flex-direction: column;
+		align-items: flex-start;
+		background-color: salmon;
+		margin-top: 100vh;
+	}
+
 }
